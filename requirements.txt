@@ -1,5 +1,6 @@
-Flask==2.0.1
-Flask-SQLAlchemy==3.0
-Flask-JWT-Extended==4.2.3
-Flask-Login==0.5.0
-psycopg2-binary==2.9.1
+Flask
+Flask-SQLAlchemy
+Flask-JWT-Extended
+Flask-Login
+Werkzeug
+Flask-RESTful

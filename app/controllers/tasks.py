@@ -14,4 +14,3 @@ def get_tasks():
     tasks = TaskService.get_all_tasks()
     return jsonify(tasks)
 
-# Implement other CRUD operations similarly

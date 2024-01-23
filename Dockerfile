@@ -2,10 +2,10 @@ FROM python:3.8
 
 WORKDIR /app
 
-COPY . .
+COPY . /app/
 
 RUN pip install -r requirements.txt
 
-RUN pip install gunicorn
+EXPOSE 5000
 
-CMD ["gunicorn", "app:app", "-b", "0.0.0.0:5000"]
+CMD ["python", "run.py"]

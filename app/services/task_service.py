@@ -13,5 +13,3 @@ class TaskService:
     def get_all_tasks():
         tasks = Task.query.all()
         return [task.serialize() for task in tasks]
-
-    # Implement other CRUD operations similarly

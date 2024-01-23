@@ -17,7 +17,6 @@ def login_user():
     data = request.get_json()
     user = auth_service.authenticate_user(data['username'], data['password'])
     if user:
-        # TODO: Generate and return JWT token
         access_token = create_access_token(indentity=user.id)
         return jsonify({'message': 'Login successful', 'token': 'your_jwt_token'})
     else:
